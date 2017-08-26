@@ -2,7 +2,7 @@
 <html>
     <head>
         <script type="text/javascript" src="home.js"></script>
-        <link type="text/css" rel="stylesheet" href="project.css"/>
+        <link type="text/css" rel="stylesheet" href="projects.css"/>
 
         <!-- link to font-awesome -->
         <link rel="stylesheet" href="/Users/Emilio/Documents/Summer_Research/pwp/font-awesome/css/font-awesome.min.css">
@@ -50,10 +50,69 @@
         <div id="project-content" style="  margin-right: 10%;
             margin-left: 10%;
             margin-top: 45px;
-            margin-bottom: 40px;">
-            <h3 style="font-family: 'Roboto Condensed', sans-serif;">Raspberry Pi Smart Alarm Clock</h3>
+            margin-bottom: 45px;">
+            <h2 style="font-family: 'Roboto Condensed', sans-serif;">Raspberry Pi Smart Alarm Clock</h2>
             <p style="line-height: 2;">This past summer I made a tablet using a touch display and a raspberry pi computer. The motivation for this came when my advisor Peter C. Johnson introduced me to the raspberry pi and some of the many things that could be done with it, ranging from using it as a server to recreating an Atari retro gaming console.</p>
-            <p style="line-height: 2";>After looking at many of the projects that were displayed on adafruit.com, I decided to start my own project using a raspberry pi. This project was a combination of a few different projects I saw, and it is still not finished. The end goal is to have a smart alarm clock, running on a touch display, that would be synced with Google Calendar, display live news headlines, show the current weather and forecast, have alarm clock capabilities, and be interactive with a voice assistant. So far, all of those are complete with the exception of the voice assistant. Moving forward, I want to sync the tablet with the lights in my dorm room so that I can control them with the voice assistant.</p>
+            <p style="line-height: 2;">After looking at many of the projects that were displayed on adafruit.com, I decided to start my own project using a raspberry pi. This project was a combination of a few different projects I saw, and it is still not finished. The end goal is to have a smart alarm clock, running on a touch display, that would be synced with Google Calendar, display live news headlines, show the current weather and forecast, have alarm clock capabilities, and be interactive with a voice assistant. So far, all of those are complete with the exception of the voice assistant. Moving forward, I want to sync the tablet with the lights in my dorm room so that I can control them with the voice assistant.</p>
+            <p style="line-height: 2;">When I first got started, I saw that finding custom casing for this project would be nearly impossible and the only way to get the perfect casing for this project was to do so using a 3D printer. I was staying at Middlebury over the summer so I figured my chances were good that Middlebury would have these kind of resources. I wasn't wrong in assuming this, but it was not easy to find the right person to contact to get access to the 3D printer.</p>
+            <p style="line-height: 2;">Once I got in touch with Mr. Koulopoulos, who handles 3D printing requests, the rest was simple. I downloaded the files containing the blueprints for a projects similar to what I was trying to accomplish, and I sent the files over to him. Within a few days all parts of the casing was complete. All I had to do was assemble and configure the tablet.</p>
+            <div style="margin-left: 75px;
+                margin-right: 75px;
+                padding-top: 20px;
+                padding-bottom: 20px;">
+                <img src="http://i.imgur.com/ETIoLVv.jpg" style="width: 100%"></img>
+            </div>
+            <p style="line-height: 2;">The assembly required a bit of soldering, which I had no previous experience with, so this part required a few hours of YouTube tutorials before i felt comfortable possibly ruining the parts that I emptied my bank account on. Luckily things worked out well in the end though. First I soldered two wires to the power switch, to then be connected to the Power Boost.</p>
+            <div style="margin-left: 75px;
+                margin-right: 75px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                display: inline-block">
+                <img src="http://i.imgur.com/j2li0rx.jpg" style="width: 48%;
+                height: 300px;
+                padding-right: 1%;
+                padding-left: 1%"></img>
+                <img src="http://i.imgur.com/422wfk8.jpg" style="width: 48%;
+                height: 300px;
+                padding-left: 1%"></img>
+            </div>
+            <p style="line-height: 2;">I then plugged in the lithium ion battery into the Power Boost, and after this, the only thing left to do on the power end of the project was to connect the power boost to the pi itself so the external power in the lithium ion battery could travel to the pi itself. This required soldering wires to the Power Boost and then to some pins on the pi.</p>
+            <div style="margin-left: 75px;
+                margin-right: 75px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                display: grid;
+                justify-items: center;">
+                <img src="http://i.imgur.com/G0qeZga.jpg" style="max-width: 50%"></img>
+            </div>
+            <p style="line-height: 2;">Connecting the raspberry pi to the touch display was much easier, as the touch display came with two wires with ends that could fit nicely on both the pi as well as the display driver. This just required plugging the wires into their respective pins.</p>
+            <div style="margin-left: 75px;
+                margin-right: 75px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                display: grid;
+                justify-items: center;">
+                <img src="http://i.imgur.com/hUbkCGV.jpg" style="max-width: 50%"></img>
+            </div>
+            <p style="line-height: 2;">The only wire/cable that needed to be connected at this point was the ribbon cable, but it was much easier to connect it from the display driver to the pi once some of the hardware was secured to the touch display.</p>
+            <div style="margin-left: 75px;
+                margin-right: 75px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                display: grid;
+                justify-items: center;">
+                <img src="http://i.imgur.com/zcZdtaS.jpg" style="max-width: 50%"></img>
+            </div>
+            <p style="line-height: 2;">I didn't have any zip-ties to secure the lithium-ion battery to the frame it rested on, so I used a rubber band... Hopefully that doesn't start any fires! After the assembly was complete, I installed Raspbian, an instance of Debian tailored specifically for the raspberry pi. To get the alarm clock display up and running, I downloaded a program from GitHub called Magic Mirror, which allowed me to accomplish all of the functionality that I wanted for this project. All it took after that was editing the .js and .css files to format it to the touch display and adjust settings for my personal use.</p>
+            <div style="margin-left: 75px;
+                margin-right: 75px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                display: grid;
+                justify-items: center;">
+                <img src="http://i.imgur.com/TiY1FTI.jpg" style="max-width: 50%"></img>
+            </div>
+            <p style="line-height: 2;">Overall, this project was really fun to do. There was a lot I didn't know going into it, but thankfully there were a lot of supportive people on forums for both raspberry pi and this Magic Mirror software that were more than willing to help me figure some of this stuff out. I still have yet to install the voice assistant and there are still minor bug fixes to be made, but overall this was a really rewarding and successful project.</p>
         </div>
 
         <div class="break">

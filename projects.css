@@ -128,7 +128,7 @@ a:active {
 #bg1 {
   width:100%;
   height: 600px;
-  background-image: url(http://i.imgur.com/u1wCixW.jpg);
+  background-image: url(http://i.imgur.com/kv94f8L.jpg);
   background-size: cover;
   background-position: center bottom;
   padding: 0px;
@@ -154,6 +154,8 @@ a:active {
   /*text-align: center;*/
   display: flex;
   align-items: center;
+  margin-left: 10%;
+  margin-right: 10%;
 
 }
 
@@ -178,6 +180,20 @@ a:active {
   margin-top: 0;
   margin-bottom: 0;
 
+}
+
+.project-content {
+
+}
+
+p {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+#pi-img{
+  margin-left: 25px;
+  margin-right: 25px;
+  height: 50px;
 }
 
 .about-me-grid {
@@ -223,5 +239,3 @@ a:active {
   /*all style for this is within the html*/
   
 }
-
-
