@@ -191,6 +191,20 @@ p {
   display: inline-table;
 }
 
+#pic-left-col {
+  width:48%;
+  float: left;
+  display: inline-grid;
+  margin-bottom: 50px;
+}
+
+#pic-right-col {
+  width:48%;
+  float: right;
+  display: inline-grid;
+  margin-bottom: 50px;
+}
+
 
 .about-me-grid {
   display: grid;
